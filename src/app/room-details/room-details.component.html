@@ -1,0 +1,22 @@
+<h2>Detalhe da sala</h2>
+<div class="card">
+  <div class="card-content">
+    <div *ngIf="room">
+      <div>
+        <label><b>Name </b></label> {{room.name}}
+      </div>
+      <div>
+        <label><b> date</b></label> {{room.date}}
+      </div>
+      <div>
+        <label><b> startHour</b></label> {{room.startHour}}
+      </div>
+      <div>
+        <label><b> endHour</b></label> {{room.endHour}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<button mat-button-raised color='primary' (click)="list()">Voltar para lista de salas</button><br>

@@ -1,0 +1,47 @@
+<h2>Criar sala de reunião:</h2>
+<div class="card z-depth-4">
+  <div class="card-content">
+    <div [hidden]="submitted" style="width: 100%;">
+      <form (ngSubmit)="onSubmit()">
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Nome da sala</mat-label>
+          <input matInput id="name" required [(ngModel)]="room.name" name="name">
+        </mat-form-field>
+
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>Data da reunião</mat-label>
+                <input matInput #postalCode maxlength="8" placeholder="Ex. 25/01/2020" id="date" required
+                  [(ngModel)]="room.date" name="date">
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>Hora de início</mat-label>
+                <input matInput #postalCode maxlength="5" placeholder="Ex. 14:00" id="startHour" required
+                  [(ngModel)]="room.startHour" name="startHour">
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>Hora de término</mat-label>
+                <input matInput #postalCode maxlength="5" placeholder="Ex. 15:00" id="endHour" required
+                  [(ngModel)]="room.endHour" name="endHour">
+              </mat-form-field>
+            </td>
+          </tr>
+        </table>
+
+        <button class="btn" mat-raised-button color="primary" type="submit">Criar
+          sala</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div [hidden]="!submitted">
+  <button class="btn" mat-raised-button color="primary" (click)="newRoom()">Add</button>
+</div>

@@ -1,0 +1,30 @@
+<mat-toolbar class="z-depth-2" color="accent">
+  <button mat-mini-fab color='primary' routerLink="rooms" class="nav-link" routerLinkActive="active">
+    <mat-icon>home</mat-icon>
+  </button>
+  <span style='margin-left: 10px'>{{ title }}</span>
+  <span class="spacer"></span>
+  <button mat-raised-button color="primary" routerLink="add" class="nav-link" routerLinkActive="active">
+    <mat-icon>add</mat-icon>CRIAR SALA
+  </button>
+</mat-toolbar>
+
+
+<div style="margin-top: 50px" class="container">
+  <div class="card z-depth-2">
+    <div class="card-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <span>Desenvolvido por <strong><a style="text-decoration: none;" href="https://github.com/vicelao"
+          target="_blank">Saulo
+          Lessa</a></strong>. Essa
+      aplicação vai parecer estática porque o back-end ainda não está
+      <i>in Cloud</i>. Por enquanto você precisa rodar localmente em:
+      <strong>http://localhost:8082/api/v1/rooms</strong></span>
+  </div>
+</footer>
