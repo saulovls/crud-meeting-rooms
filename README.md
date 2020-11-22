@@ -13,7 +13,7 @@
 
 3. Até agora, você consegue Criar, Remover, Editar e Excluir salas. 
 
-4. [Veja uma demo clicando aqui! 🎉]()
+4. [Veja uma demo clicando aqui! 🎉](https://crud-meeting-rooms.vercel.app/rooms)
 
    
 
